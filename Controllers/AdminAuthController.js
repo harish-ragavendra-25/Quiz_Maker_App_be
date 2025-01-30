@@ -24,7 +24,7 @@ const adminRegisterFunction = async(req,res) => {
 
         newUser.save();
 
-        res.status(201).json({message: `${username.role} - ${username} registered sucessfully`});
+        res.status(201).json({message: `${newUser.role} - ${username} registered sucessfully`});
     } catch (error) {
         console.log(error);
         res.status(500).json({message:'Something went wrong while registering admin'})

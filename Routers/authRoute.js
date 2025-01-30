@@ -5,7 +5,7 @@ const { adminLoginFunction,adminRegisterFunction } = require('../Controllers/Adm
 
 //Admin Login & Register Route
 router.post('/admin/register',adminRegisterFunction);
-router.post('/admin/register',adminRegisterFunction);
+router.post('/admin/login',adminLoginFunction);
 
 //User Login & Register Route
 router.post('/login',loginFunction);
